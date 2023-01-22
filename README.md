@@ -4,7 +4,7 @@ Servicio para acortar urls y redimensionar imagenes
 ####
 ## Instalación
 
-###Prerequisitos
+##Prerequisitos
 ``` 
 Tener instalado Docker
 Tener instalado Maven

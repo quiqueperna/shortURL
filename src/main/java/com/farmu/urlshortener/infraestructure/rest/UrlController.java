@@ -1,6 +1,6 @@
-package com.farmu.shortenerurl.infraestructure;
+package com.farmu.urlshortener.infraestructure.rest;
 
-import com.farmu.shortenerurl.application.UrlService;
+import com.farmu.urlshortener.application.UrlService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

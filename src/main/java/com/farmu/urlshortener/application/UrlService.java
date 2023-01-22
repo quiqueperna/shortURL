@@ -1,9 +1,9 @@
-package com.farmu.shortenerurl.application;
+package com.farmu.urlshortener.application;
 
-import com.farmu.shortenerurl.infraestructure.UrlDTO;
+import com.farmu.urlshortener.infraestructure.rest.UrlDTO;
 import com.google.common.hash.Hashing;
-import com.farmu.shortenerurl.infraestructure.UrlRepository;
-import com.farmu.shortenerurl.domain.UrlEntity;
+import com.farmu.urlshortener.infraestructure.repository.UrlRepository;
+import com.farmu.urlshortener.domain.UrlEntity;
 import org.apache.commons.validator.routines.UrlValidator;
 import org.springframework.stereotype.Service;
 
@@ -19,12 +19,25 @@ public class UrlService {
         this.urlRepository = urlRepository;
     }
 
+    /**
+     * It return a long url related with a short url
+     * @param shortUrl
+     * @return the long url
+     */
+
     public String getUrl(String shortUrl) {
         UrlEntity ue = this.urlRepository.findByHash(shortUrl);
         if (ue != null)
             return ue.getUrl();
         return "";
     }
+
+    /**
+     * It create a short url from a long url and save them. The short url is created with a hash function.
+     * @param url
+     * @return a Dto with info about the url.
+     * @throws MalformedURLException if the url y malformed.
+     */
 
     public UrlDTO createShortUrl(String url) throws MalformedURLException {
         UrlValidator urlValidator = new UrlValidator(new String[]{"http", "https"});

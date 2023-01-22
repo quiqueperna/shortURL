@@ -8,9 +8,9 @@
 		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.shortUrl</groupId>
-	<artifactId>shortUrl</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<groupId>com.farmuInterview</groupId>
+	<artifactId>farmuInterview</artifactId>
+	<version>1.0.0</version>
 	<name>farmu-interview</name>
 	<description></description>
 	<properties>

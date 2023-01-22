@@ -1,6 +1,6 @@
-package com.farmu.shortenerurl.infraestructure;
+package com.farmu.urlshortener.infraestructure.repository;
 
-import com.farmu.shortenerurl.domain.UrlEntity;
+import com.farmu.urlshortener.domain.UrlEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

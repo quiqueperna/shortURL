@@ -1,4 +1,4 @@
-package com.farmu.shortenerurl.domain;
+package com.farmu.urlshortener.domain;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;

@@ -1,4 +1,4 @@
-package com.farmu.shortenerurl.infraestructure;
+package com.farmu.urlshortener.infraestructure.rest;
 
 public class UrlDTO {
 
